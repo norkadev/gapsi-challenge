@@ -15,7 +15,7 @@ Frontend React + TypeScript para consultar y administrar proveedores mediante el
 ## Instalar y ejecutar
 
 ```shell
-git clone https://github.com/<usuario>/gapsi-challenge.git
+git clone https://github.com/norkadev/gapsi-challenge.git
 cd gapsi-challenge/proveedores-ui
 npm i
 npm run dev
@@ -42,10 +42,10 @@ La fotografía del candidato y el logo de Gapsi se encuentran en `src/assets/`. 
 
 ## Patrones de diseño
 
-| Patrón | Archivo |
-|---|---|
-| Singleton | `src/shared/api/httpClient.ts` |
-| Facade | `src/features/proveedores/proveedoresApi.ts` |
+| Patrón    | Archivo                                      |
+| --------- | -------------------------------------------- |
+| Singleton | `src/shared/api/httpClient.ts`               |
+| Facade    | `src/features/proveedores/proveedoresApi.ts` |
 
 ## Funcionalidad destacada
 
