@@ -1,0 +1,49 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs y editores
+.idea/
+.vscode/
+*.iml
+*.code-workspace
+
+# Node / frontend
+node_modules/
+dist/
+dist-ssr/
+*.tsbuildinfo
+npm-debug.log*
+
+# Java / Maven
+target/
+*.class
+*.log
+logs/
+
+# Base de datos local (H2 en archivo, si se usara)
+*.mv.db
+*.trace.db
+
+# Variables de entorno: se ignoran las locales y se conservan las de ejemplo
+.env
+.env.*
+!.env.development
+!.env.example
+*.local
+
+# Archivos de agentes de IA (no se suben)
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+.claude/
+**/.github/agents/
+**/.github/instructions/
+**/.github/prompts/
+**/.github/skills/
+**/.github/copilot-instructions.md
+**/*.agent.md
+**/*.instructions.md
+**/*.prompt.md
+**/*.chatmode.md

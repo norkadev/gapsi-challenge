@@ -1,0 +1,716 @@
+{
+  "info": {
+    "_postman_id": "05375a3a-cd36-4025-905d-56296e4f00be",
+    "name": "Proveedores API",
+    "description": "API REST para consultar y administrar proveedores.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "906015",
+    "_collection_link": "https://go.postman.co/collection/906015-05375a3a-cd36-4025-905d-56296e4f00be?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "api",
+      "item": [
+        {
+          "name": "v1",
+          "item": [
+            {
+              "name": "proveedores",
+              "item": [
+                {
+                  "name": "{id}",
+                  "item": [
+                    {
+                      "name": "Obtiene un proveedor por su identificador",
+                      "request": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "*/*"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/v1/proveedores/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "v1",
+                            "proveedores",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "3371"
+                            }
+                          ]
+                        }
+                      },
+                      "response": [
+                        {
+                          "name": "Proveedor encontrado",
+                          "originalRequest": {
+                            "method": "GET",
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "*/*"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/api/v1/proveedores/:id",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "api",
+                                "v1",
+                                "proveedores",
+                                ":id"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "id",
+                                  "value": "3371"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "_postman_previewlanguage": "text",
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "*/*"
+                            }
+                          ],
+                          "cookie": [],
+                          "body": "{\n  \"id\": 1,\n  \"nombre\": \"Suministros del Centro\",\n  \"razonSocial\": \"Suministros del Centro S.A. de C.V.\",\n  \"direccion\": \"Av. Reforma 100, Ciudad de México\"\n}"
+                        },
+                        {
+                          "name": "Proveedor no encontrado",
+                          "originalRequest": {
+                            "method": "GET",
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "*/*"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/api/v1/proveedores/:id",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "api",
+                                "v1",
+                                "proveedores",
+                                ":id"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "id",
+                                  "value": "3371"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "Not Found",
+                          "code": 404,
+                          "_postman_previewlanguage": "text",
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "*/*"
+                            }
+                          ],
+                          "cookie": [],
+                          "body": "{\n  \"type\": \"https://F.cqEOECqrIGKAfTkjGm20GJUbdWjtRQGMHdOD0Uqk-I1zsYmzV4xfBDh1GIRhSbDjN9liP\",\n  \"title\": \"string\",\n  \"status\": 7659,\n  \"detail\": \"string\",\n  \"instance\": \"https://LdszkMeTKvc.klaMtQCg4veUB1d,R8PEEe7H4swdOWR\",\n  \"properties\": {\n    \"key_0\": 8907\n  }\n}"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Elimina un proveedor",
+                      "request": {
+                        "method": "DELETE",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "*/*"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/v1/proveedores/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "v1",
+                            "proveedores",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "3371"
+                            }
+                          ]
+                        }
+                      },
+                      "response": [
+                        {
+                          "name": "Proveedor eliminado",
+                          "originalRequest": {
+                            "method": "DELETE",
+                            "header": [],
+                            "url": {
+                              "raw": "{{baseUrl}}/api/v1/proveedores/:id",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "api",
+                                "v1",
+                                "proveedores",
+                                ":id"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "id",
+                                  "value": "3371"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "No Content",
+                          "code": 204,
+                          "_postman_previewlanguage": "text",
+                          "header": [],
+                          "cookie": [],
+                          "body": null
+                        },
+                        {
+                          "name": "Proveedor no encontrado",
+                          "originalRequest": {
+                            "method": "DELETE",
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "*/*"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/api/v1/proveedores/:id",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "api",
+                                "v1",
+                                "proveedores",
+                                ":id"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "id",
+                                  "value": "3371"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "Not Found",
+                          "code": 404,
+                          "_postman_previewlanguage": "text",
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "*/*"
+                            }
+                          ],
+                          "cookie": [],
+                          "body": "{\n  \"type\": \"https://F.cqEOECqrIGKAfTkjGm20GJUbdWjtRQGMHdOD0Uqk-I1zsYmzV4xfBDh1GIRhSbDjN9liP\",\n  \"title\": \"string\",\n  \"status\": 7659,\n  \"detail\": \"string\",\n  \"instance\": \"https://LdszkMeTKvc.klaMtQCg4veUB1d,R8PEEe7H4swdOWR\",\n  \"properties\": {\n    \"key_0\": 8907\n  }\n}"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Lista proveedores de forma paginada",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "*/*"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/v1/proveedores?page=0&size=20&sort=string&sort=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "proveedores"
+                      ],
+                      "query": [
+                        {
+                          "description": "Zero-based page index (0..N)",
+                          "key": "page",
+                          "value": "0"
+                        },
+                        {
+                          "description": "The size of the page to be returned",
+                          "key": "size",
+                          "value": "20"
+                        },
+                        {
+                          "description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported.",
+                          "key": "sort",
+                          "value": "string"
+                        },
+                        {
+                          "description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported.",
+                          "key": "sort",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "Página de proveedores",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "*/*"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/v1/proveedores?page=0&size=20&sort=string",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "v1",
+                            "proveedores"
+                          ],
+                          "query": [
+                            {
+                              "description": "Zero-based page index (0..N)",
+                              "key": "page",
+                              "value": "0"
+                            },
+                            {
+                              "description": "The size of the page to be returned",
+                              "key": "size",
+                              "value": "20"
+                            },
+                            {
+                              "description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported.",
+                              "key": "sort",
+                              "value": "string"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "*/*"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"totalPages\": 7706,\n  \"totalElements\": 1280,\n  \"size\": 4561,\n  \"content\": [\n    {\n      \"id\": 1,\n      \"nombre\": \"Suministros del Centro\",\n      \"razonSocial\": \"Suministros del Centro S.A. de C.V.\",\n      \"direccion\": \"Av. Reforma 100, Ciudad de México\"\n    },\n    {\n      \"id\": 1,\n      \"nombre\": \"Suministros del Centro\",\n      \"razonSocial\": \"Suministros del Centro S.A. de C.V.\",\n      \"direccion\": \"Av. Reforma 100, Ciudad de México\"\n    }\n  ],\n  \"number\": 3266,\n  \"sort\": {\n    \"empty\": false,\n    \"sorted\": true,\n    \"unsorted\": true\n  },\n  \"pageable\": {\n    \"offset\": 5286,\n    \"paged\": true,\n    \"pageNumber\": 8978,\n    \"pageSize\": 2477,\n    \"sort\": {\n      \"empty\": true,\n      \"sorted\": true,\n      \"unsorted\": false\n    },\n    \"unpaged\": true\n  },\n  \"numberOfElements\": 3025,\n  \"first\": false,\n  \"last\": true,\n  \"empty\": false\n}"
+                    },
+                    {
+                      "name": "Parámetros de paginación u orden inválidos",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "*/*"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/v1/proveedores?page=0&size=20&sort=string",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "v1",
+                            "proveedores"
+                          ],
+                          "query": [
+                            {
+                              "description": "Zero-based page index (0..N)",
+                              "key": "page",
+                              "value": "0"
+                            },
+                            {
+                              "description": "The size of the page to be returned",
+                              "key": "size",
+                              "value": "20"
+                            },
+                            {
+                              "description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported.",
+                              "key": "sort",
+                              "value": "string"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "Bad Request",
+                      "code": 400,
+                      "_postman_previewlanguage": "text",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "*/*"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"type\": \"https://F.cqEOECqrIGKAfTkjGm20GJUbdWjtRQGMHdOD0Uqk-I1zsYmzV4xfBDh1GIRhSbDjN9liP\",\n  \"title\": \"string\",\n  \"status\": 7659,\n  \"detail\": \"string\",\n  \"instance\": \"https://LdszkMeTKvc.klaMtQCg4veUB1d,R8PEEe7H4swdOWR\",\n  \"properties\": {\n    \"key_0\": 8907\n  }\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "Registra un proveedor",
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "*/*"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"direccion\": \"Av. Reforma 100, Ciudad de México\",\n  \"nombre\": \"Suministros del Centro\",\n  \"razonSocial\": \"Suministros del Centro S.A. de C.V.\"\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/v1/proveedores",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "proveedores"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "Proveedor creado",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "*/*"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"direccion\": \"Av. Reforma 100, Ciudad de México\",\n  \"nombre\": \"Suministros del Centro\",\n  \"razonSocial\": \"Suministros del Centro S.A. de C.V.\"\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/api/v1/proveedores",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "v1",
+                            "proveedores"
+                          ]
+                        }
+                      },
+                      "status": "Created",
+                      "code": 201,
+                      "_postman_previewlanguage": "text",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "*/*"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"id\": 1,\n  \"nombre\": \"Suministros del Centro\",\n  \"razonSocial\": \"Suministros del Centro S.A. de C.V.\",\n  \"direccion\": \"Av. Reforma 100, Ciudad de México\"\n}"
+                    },
+                    {
+                      "name": "Datos inválidos",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "*/*"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"direccion\": \"Av. Reforma 100, Ciudad de México\",\n  \"nombre\": \"Suministros del Centro\",\n  \"razonSocial\": \"Suministros del Centro S.A. de C.V.\"\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/api/v1/proveedores",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "v1",
+                            "proveedores"
+                          ]
+                        }
+                      },
+                      "status": "Bad Request",
+                      "code": 400,
+                      "_postman_previewlanguage": "text",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "*/*"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"type\": \"https://F.cqEOECqrIGKAfTkjGm20GJUbdWjtRQGMHdOD0Uqk-I1zsYmzV4xfBDh1GIRhSbDjN9liP\",\n  \"title\": \"string\",\n  \"status\": 7659,\n  \"detail\": \"string\",\n  \"instance\": \"https://LdszkMeTKvc.klaMtQCg4veUB1d,R8PEEe7H4swdOWR\",\n  \"properties\": {\n    \"key_0\": 8907\n  }\n}"
+                    },
+                    {
+                      "name": "El nombre ya existe",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "*/*"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"direccion\": \"Av. Reforma 100, Ciudad de México\",\n  \"nombre\": \"Suministros del Centro\",\n  \"razonSocial\": \"Suministros del Centro S.A. de C.V.\"\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/api/v1/proveedores",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "v1",
+                            "proveedores"
+                          ]
+                        }
+                      },
+                      "status": "Conflict",
+                      "code": 409,
+                      "_postman_previewlanguage": "text",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "*/*"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"type\": \"https://F.cqEOECqrIGKAfTkjGm20GJUbdWjtRQGMHdOD0Uqk-I1zsYmzV4xfBDh1GIRhSbDjN9liP\",\n  \"title\": \"string\",\n  \"status\": 7659,\n  \"detail\": \"string\",\n  \"instance\": \"https://LdszkMeTKvc.klaMtQCg4veUB1d,R8PEEe7H4swdOWR\",\n  \"properties\": {\n    \"key_0\": 8907\n  }\n}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "welcome",
+              "item": [
+                {
+                  "name": "Obtiene el mensaje de bienvenida",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "*/*"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/v1/welcome",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "welcome"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "Mensaje de bienvenida",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "*/*"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/v1/welcome",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "v1",
+                            "welcome"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "*/*"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"message\": \"Bienvenido Candidato 01\"\n}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "version",
+              "item": [
+                {
+                  "name": "Obtiene la versión de la aplicación",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "*/*"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/v1/version",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "version"
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "Versión de la aplicación",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "*/*"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/v1/version",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "v1",
+                            "version"
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "*/*"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"version\": \"0.0.1-SNAPSHOT\"\n}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: proveedores
+  profiles:
+    default: dev
+  jpa:
+    open-in-view: false
+server:
+  port: 8080
+app:
+  version: "@project.version@"
+  welcome-message: "Bienvenido Candidato 01"
